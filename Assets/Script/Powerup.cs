@@ -12,6 +12,10 @@ public class Powerup : MonoBehaviour
     //1 = Speed
     //2 = Shields
     //3 = Battle Ram
+    //4 = Time Stop
+    //5 = Heal Pickup
+    //6 = Ammo Pickup
+    //7 = Orb Shot
     [SerializeField]
     private int powerupID;
 
@@ -45,10 +49,30 @@ public class Powerup : MonoBehaviour
                         player.ActivateSpeedBoost();
                         break;
                     case 2:
-                        player.ActivateShield();
+                        if(player.shieldHealth <= 3)
+                            player.ActivateShield();
                         break;
                     case 3:
                         player.ActivateBattleRam();
+                        break;
+                    case 4:
+                        player.ActivateTimeStop();
+                        break;
+                    case 5:
+                        if(player._health != 3)
+                            player.Heal();
+                        break;
+                    case 6:
+                        player.AddAmmo(player.ammoPickupAmmount);
+                        print("Ammo Count: " + player.ammoCount);
+                        break;
+                    case 7:
+                        //increases rarity of shot. Has a 1/4 chance of not spawning.
+                        int shotRarity = Random.Range(0, 3);
+                        if(shotRarity != 0) {
+                            player.ActivateOrbShot();
+                        }
+
                         break;
                     default:
                         print("Invalid PowerUp!");

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2146922741078462936}
   - component: {fileID: 8242733354689277253}
   - component: {fileID: -8571982484471668822}
+  - component: {fileID: -3556103192858058004}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -51,6 +52,8 @@ MonoBehaviour:
   minSpeed: 2
   maxSpeed: 6
   killScore: 10
+  _playerReference: {fileID: 5538292962296774903, guid: ab939d10cc1c20e46a33a651b35512d9,
+    type: 3}
   explosionAnim: {fileID: 8887517129466391799, guid: 563fe9ac144e00447a5fab092135b670,
     type: 3}
   enemyLaser: {fileID: 2834971291129436783, guid: c6a9a2d90167bb2428259e68276bb906,
@@ -343,3 +346,17 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3556103192858058004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7335879633343447640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8aaf777eb1daa49b0203b7613e9869, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  flicker: 1
+  flickerTime: 0.25
