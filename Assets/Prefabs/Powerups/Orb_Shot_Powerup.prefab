@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2768881044565747816}
   - component: {fileID: 7675442422439724158}
   - component: {fileID: 5011943025956109137}
+  - component: {fileID: 766321421977969712}
   m_Layer: 0
   m_Name: Orb_Shot_Powerup
   m_TagString: Untagged
@@ -215,3 +216,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 5
   powerupID: 7
+--- !u!95 &766321421977969712
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2659678481764179071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 342c2f0d4f09af94e93b38be495cb30d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

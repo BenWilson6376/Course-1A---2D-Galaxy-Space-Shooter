@@ -21,6 +21,7 @@ public class OrbLaser : Laser
     {
         while(true) {
             Instantiate(orbShots, this.transform);
+
             yield return new WaitForSeconds(1f);
         }
     }
